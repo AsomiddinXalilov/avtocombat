@@ -1,0 +1,122 @@
+.main {
+    flex-grow: 1;
+    background-color: #181818;
+    margin: 25px 50px 40px 50px;
+    border-radius: 20px;
+
+    &__container {
+        max-width: 1380px;
+        margin: 0 auto;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    &__head {
+        font-family: "Inter", "Arial", sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 280px;
+        padding: 30px;
+        margin-bottom: 40px;
+        background-color: #fff;
+        border-radius: 24px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid #EBEBEB;
+
+        &:hover {
+            box-shadow: 100px 0px 0px 0px #fff;
+            border-right: none;
+
+            img {
+                margin-left: 25px;
+            }
+        }
+
+        img {
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &__content {
+        width: 230px;
+        font-family: "Inter", "Arial", sans-serif;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &__coll {
+        padding: 17px 128px;
+        color: #fff;
+        background-color: #242424;
+        border: 1px solid #242424;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        background-color: transparent;
+        &__head {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {  
+    .main {
+        background-color: transparent;
+        margin: 0;
+        border-radius: 0%;
+
+        &__container {
+            padding-top: 60px;
+        }
+
+        &__head {
+            display: block;
+        }
+
+        &__item {
+            width: 330px;
+        }
+
+        &__coll {
+            padding: 17px 115px;
+            color: #fff;
+            background-color: #383838;
+            border: 1px solid #383838;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: "Roboto", "Arial", sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23px;
+            letter-spacing: 0.01em;
+            text-align: center;
+        }
+    }
+}

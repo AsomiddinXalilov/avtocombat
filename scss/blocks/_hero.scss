@@ -1,0 +1,138 @@
+.hero {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 58px;
+
+    &__home {
+        font-family: "Roboto", "Arial", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #444444;
+        border-right: 1px solid #444444;
+        padding-right: 5px;
+    }
+
+    &__elektrik {
+        font-family: "Roboto", "Arial", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: red;
+    }
+
+    &__box { 
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        margin-right: 62px;
+    }
+
+    &__head {
+        font-family: "Inter", "Arial", sans-serif;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 48px;
+        letter-spacing: 0em;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        width: 446px;
+        font-family: "Roboto", "Arial", sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        opacity: 70%;
+        margin-bottom: 30px;
+    }
+
+    &__coll {
+        padding: 18px 89px;
+        font-family: "Roboto", "Arial", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid red;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .hero {
+        &__coll {
+            display: none;
+        }
+
+        &__text {
+            width: 533px;
+        }
+
+        &__box {
+            flex-wrap: wrap;
+        }
+
+        &__image {
+            width: 684px;
+            height: 444px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero {
+        &__head {
+            font-family: "Inter", "Arial", sans-serif;
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 48px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        &__coll {
+            display: block; 
+            padding: 17px 128px;
+            background-color: #242424;
+            border: 1px solid #242424;
+        }
+
+        &__text {
+            font-family: "Inter", "Arial", sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 35px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 335px;
+        }
+
+        &__image {
+            width: 335px;
+            height: 256px;
+        }
+    }
+}
