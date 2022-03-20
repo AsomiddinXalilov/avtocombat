@@ -784,6 +784,12 @@ ul, ol {
   border: 1px solid red;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero__coll:hover {
+  background-color: red;
 }
 
 @media screen and (max-width: 1260px) {
@@ -1139,6 +1145,11 @@ ul, ol {
   opacity: 70%;
 }
 
+.footer__company--link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 .footer__flex {
   width: 246px;
   display: -webkit-box;
@@ -1178,6 +1189,11 @@ ul, ol {
   opacity: 70%;
 }
 
+.footer__uslugi--link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 .footer__address--item {
   margin-bottom: 20px;
 }
@@ -1202,6 +1218,11 @@ ul, ol {
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.footer__address--link:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 .footer__span {
@@ -1237,6 +1258,9 @@ ul, ol {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .footer__mini--box {
+    width: 428px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1254,6 +1278,9 @@ ul, ol {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .footer .footer__mini--box {
+    width: 330px;
   }
   .footer__item {
     padding: 5px 6px;

@@ -152,6 +152,11 @@
         letter-spacing: 0em;
         text-align: left;
         opacity: 70%;
+
+        &:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
     }
 
     &__flex {
@@ -186,6 +191,11 @@
         letter-spacing: 0em;
         text-align: left;
         opacity: 70%;
+
+        &:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
     }
 
     &__address--item {
@@ -212,6 +222,11 @@
         line-height: 17px;
         letter-spacing: 0em;
         text-align: left;
+
+        &:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
     }
 
     &__span {
@@ -245,6 +260,10 @@
         width: 100px;
         flex-direction: column;
     }
+
+    .footer__mini--box {
+        width: 428px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -257,6 +276,10 @@
         &__list {
             display: flex;
             justify-content: space-between;
+        }
+
+        .footer__mini--box {
+            width: 330px;
         }
 
         &__item {
